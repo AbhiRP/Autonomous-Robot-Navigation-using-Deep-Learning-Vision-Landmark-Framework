@@ -12,3 +12,5 @@ robot has oriented towards the object, the robot moves towards it using on-board
 A flowchart of the process is provided below:
 
 ![project_overview](Images/project_overview.png)
+
+The processes will be explained in detail on coming sections.
