@@ -16,6 +16,7 @@ markers from images and Robot Operating System and Object Position Discovery sys
 4. ImageNet Dataset http://www.image-net.org/
 
 ## ROS Package:
+openni2_launch http://wiki.ros.org/openni2_launch
 depthimage_to_laserscan http://wiki.ros.org/depthimage_to_laserscan
 
 ## Documentation:
