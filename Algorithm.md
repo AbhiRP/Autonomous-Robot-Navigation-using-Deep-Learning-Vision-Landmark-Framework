@@ -7,8 +7,10 @@ custom TensorFlow Inception v3 image classification engine. The top 5 classes of
 listed by their match scores. From this list, the object with maximum score is written to OPD file along with the position
 of the robot when the image was captured. After detection is complete, the OPD file is cleaned using a python script which
 removes empty rows and columns and multiple labels of same class. The marker detection phase ends here.
+<p align="center">
+  <img src ="Images/image_phase.png" />
+</p>
 
-![image_phase](Images/image_phase.png)
 
 ## 2) Robot Navigation Phase: 
   In the navigation phase, all the recognized markers are prompted to the user for a selection of
@@ -18,8 +20,9 @@ proximity of each other, an average of their positional data is calculated. Once
 and orients itself towards the desired object. After orienting towards the object, the distance to the object from the robot
 is calculated using the on-board depth camera. The robot navigates towards the marker, constantly updating the distance
 to travel and stops when it reaches user-defined threshold distance to the object.
-
-![nav_phase](Images/nav_phase.png)
+<p align="center">
+  <img src = "Images/nav_phase.png" />
+</p>
 
 ## Inception v3 Image Recognition Engine
 
