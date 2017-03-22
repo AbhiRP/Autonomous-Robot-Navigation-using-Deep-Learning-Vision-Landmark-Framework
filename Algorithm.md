@@ -56,3 +56,5 @@ use rectified linear activation [7].
 The schematic diagram of Inception v3 engine is provided in Figure 4.
 
 ![inception](Images/inception_scematic.png)
+
+Now since we have the algorithm developed for this project, next comes [Experimental Setup](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Experimental%20Setup.md) used for the project.
