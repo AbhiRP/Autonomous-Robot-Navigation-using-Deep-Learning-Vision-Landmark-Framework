@@ -10,3 +10,4 @@ robot locates the position and orientation of the target in its database. Then t
 robot has oriented towards the object, the robot moves towards it using on-board depth camera for feedback. 
 
 A flowchart of the process is provided below:
+![project_overview](Images/project_overview.png)
