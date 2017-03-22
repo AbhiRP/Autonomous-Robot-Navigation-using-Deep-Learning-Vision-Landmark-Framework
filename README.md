@@ -19,7 +19,7 @@ markers from images and Robot Operating System and Object Position Discovery sys
 depthimage_to_laserscan http://wiki.ros.org/depthimage_to_laserscan
 
 ## Documentation:
-This project is documented as below:
+This project is documented as follows:
 1. [Project Overview](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Project%20Overview.md)
 2. [Algorithm](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Algorithm.md)
 3. [Experimental Setup](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Experimental%20Setup.md)
