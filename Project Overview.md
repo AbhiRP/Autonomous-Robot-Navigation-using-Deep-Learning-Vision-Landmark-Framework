@@ -13,4 +13,4 @@ A flowchart of the process is provided below:
 
 ![project_overview](Images/project_overview.png)
 
-The processes will be explained in detail on coming sections.
+The processes will be explained in detail on coming sections. Next section is [Algorithm](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Algorithm.md) used for this project.
