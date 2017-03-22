@@ -1,11 +1,10 @@
 # Project Implementation
 
-The project implementation is again divided into two phases. Before starting the image recognition phase, the Kobuki robot need to be prepared. 
+The project implementation is again divided into two phases. Before starting the marker detection phase, the Kobuki robot need to be prepared. 
 
 ROS packages are used for the interface for the connectivity to the Kobuki Turtlebot2 and the ASUS Xtion RGB-D camera. The Kobuki ROS launch file `minimal.launch` is executed first to bring up the robot model and start the basic nodes of the robot. The OPENNI2 ROS launch file `openni2.launch` is used to connect to OpenNI-compliant devices such as the Asus Xtion. The robot keyboard controller launch file `keyop.launch` provides control for the initial stage to rotate the robot while taking pictures.
 
-A general purpose consumer laptop is used to supplement the robot’s on-board computer. The ODROID microcomputer can run the image recognition engine but adds a significant level of latency to the operations of the robot. ROS is used to facilitate the connectivity between the microcomputer and the laptop. Software developed using the ROS middleware only needs to be aware of the IP Address of the microcomputer to
-subscribe to the camera topic.
+A general purpose consumer laptop is used to supplement the robot’s on-board computer. The ODROID microcomputer can run the image recognition engine but adds a significant level of latency to the operations of the robot. ROS is used to facilitate the connectivity between the microcomputer and the laptop. Software developed using the ROS middleware only needs to be aware of the IP Address of the microcomputer to subscribe to the camera topic.
 
 The Kobuki robot is accessed through the laptop over Wi-Fi using SSH.
 ```
@@ -25,7 +24,7 @@ A new ROS package, kobuki odom was created and contains a new script `odom liste
 rosrun kobuki_odom odom_listener
 ```
 
-## Image Recognition Phase
+## Marker Detection Phase
 
 Image recognition is accomplished by the TensorFlow framework based Inception v3 engine. The default engine is designed such that it is not integrated with ROS. An interface was added to integrate Inception V3 with ROS. Positions of the markers are identified by the robot’s orientation data topic and the yaw angle topic. The combined engine and ROS interface subscribes to odometry data and transforms the quaternion-based heading to an Euler angle. 
 
