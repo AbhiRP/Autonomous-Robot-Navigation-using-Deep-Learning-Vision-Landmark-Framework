@@ -28,7 +28,7 @@ rosrun kobuki_odom odom_listener
 
 Image recognition is accomplished by the TensorFlow framework based Inception v3 engine. The default engine is designed such that it is not integrated with ROS. An interface was added to integrate Inception V3 with ROS. Positions of the markers are identified by the robot’s orientation data topic and the yaw angle topic. The combined engine and ROS interface subscribes to odometry data and transforms the quaternion-based heading to an Euler angle. 
 
-Once the position of robot is obtained, the Kobuki robot is rotated using keyboard control and commands for starting image capture are executed. Once the live image feed from Asus Xtion camera is up and running, images can be saved at regular intervals. For saving images, the `image_saver` tool of `image_view` (a viewer for ROS image topics) is used which subscribes to image feed of camera. When the above `image_saver` code is executed, images with a resolution of 640x480 are saved whenever the `image_saver save` ROS service is called.
+Once the position of robot is obtained, the Kobuki robot is rotated using keyboard control and commands for starting image capture are executed. Once the live image feed from Asus Xtion camera is up and running, images can be saved at regular intervals. For saving images, the _image_saver_ tool of _image_view_ (a viewer for ROS image topics) is used which subscribes to image feed of camera. When the above _image_saver_ code is executed, images with a resolution of 640x480 are saved whenever the `image_saver save` ROS service is called.
 ```
 rosrun image_view image_view image:=/camera/rgb/image_raw
 rosrun image_view image_saver image:=/camera/rgb/image_raw _save_all_image:=false _filename_format:=TestImage.jpg __name:=image_saver
