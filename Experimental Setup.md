@@ -1,3 +1,5 @@
+# Experimental Setup
+
 ## Hardware:
 
 The robot used for this autonomous navigation method is a Kobuki TurtleBot 2 [9], a low-cost, open source differential drive robot by
