@@ -37,11 +37,12 @@ The robot orients itself towards the required object once it gets an input from 
 <p align = "center">
   <img src = "Images/point cloud cropped.png" width="30%"/> 
   
-  <em> OS sensor visualization output displaying the PointCloud image taken from the Asus Xtion RGB-D camera </em>
+  <em> OS sensor visualization output displaying the PointCloud image taken from the Asus Xtion RGB-D camera </em> </p>
   
+  <p align = "center"> 
   <img src = "Images/laserscan cropped.png" width="27%"/>
   
-  <em>Top view of simulated laser scan (”/scan” ROS topic) from Asus Xtion </em>
+  <em>Top view of simulated laser scan (_/scan_ ROS topic) from Asus Xtion </em>
 </p>
 
 After finding the distance to move, the robot starts moving towards the object. Figures below shows the movement of robot taken at various instances. The Kobuki will stop in front of the object keeping a safe distance.
