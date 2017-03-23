@@ -52,3 +52,8 @@ After finding the distance to move, the robot starts moving towards the object. 
 
   <em> Kobuki Turtlebot2 robot moving towards the _bucket_ object.</em>
 </p>
+
+The `rqt_graph` of all ROS nodes are given below:
+<p align = "center">
+  <img src = "Images/node_graph.png"/>
+</p>
