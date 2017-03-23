@@ -8,6 +8,4 @@ When the codes are executed as mentioned above, the Kobuki was able to rotate, t
 
 Figure 8 shows the terminal in which `Inception v3` engine using TensorFlow framework identifies different objects from the image. In the terminal, the identified object along with its accuracy (score) can be seen.
 
-<p align = "center">
-  <img src = "Images/imageclassifier.png" width="50%"/>
-</p>
+
