@@ -1,1 +1,6 @@
+# Experimental Results
 
+When the codes are executed as mentioned above, the Kobuki was able to rotate, take multiple images and pass them to modified Inception v3 engine. Figure 7 shows the Kobuki rotating from its initial position, taking images at fixed intervals.
+<p align="left">
+  <img src="rotate_1.jpg" width="30%"/> <img src="rotate_2.jpg" width="30%"/> 
+</p>
