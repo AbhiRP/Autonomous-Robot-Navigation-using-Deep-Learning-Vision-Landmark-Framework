@@ -2,7 +2,7 @@
 
 ## Hardware:
 
-The robot used for this autonomous navigation method is a Kobuki TurtleBot 2 [9], a low-cost, open source differential drive robot by
+The robot used for this autonomous navigation method is a Kobuki TurtleBot 2, a low-cost, open source differential drive robot by
 Yujin Robot. It has reliable odometry sensors, long battery life and provides power for an external sensor and actuators. It consists
 of a mobile base, Asus Xtion RGBD camera, and an ODROID XU4 octacore microcomputer.
 
