@@ -18,8 +18,8 @@ roslaunch openni2_launch openni2.launch
 roslaunch kobuki_keyop keyop.launch
 ```
 
-A new ROS package, kobuki odom was created and contains a new script `odom listener` which subscribes to current position of the robot 
-(x, y, z) from the _nav_msgs/Odometry_ type message published by the robot in Quaternion form. Another requirement is the current angle of the robot, which is collected from a _geometry_msgs/Quarternion_ type message published from the robot. The angles in Quaternion form and converted to converted to Euler form. The conversion of the angle is included in the `odom listener` script. The converted angles are published as a new node `odom listener` with a _geometry_msgs/Vector3_ message type. This node is used in many scripts for Kobuki navigation.
+A new ROS package, kobuki odom was created and contains a new script `odom_listener` which subscribes to current position of the robot 
+(x, y, z) from the _nav_msgs/Odometry_ type message published by the robot in Quaternion form. Another requirement is the current angle of the robot, which is collected from a _geometry_msgs/Quarternion_ type message published from the robot. The angles in Quaternion form and converted to converted to Euler form. The conversion of the angle is included in the `odom_listener` script. The converted angles are published as a new node `odom_listener` with a _geometry_msgs/Vector3_ message type. This node is used in many scripts for Kobuki navigation.
 ```
 rosrun kobuki_odom odom_listener
 ```
