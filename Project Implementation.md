@@ -61,7 +61,7 @@ rosrun depthimage_to_laserscan depthimage_to_laserscan image:=/camera/depth/imag
 
 After `depthimage_to_laserscan` ROS package is up and running, a controller written in python, `move_kobuki` is executed which subscribes to _/scan(sensor msgs/LaserScan)_ type topics and odometry data from the Kobuki in the form of _Twist(geometry_msgs)_ type messages. This script also publishes a ROS topic named `dist_range`. From the depth image values, the shortest distance value is selected and passed to a variable _`minimum_distance`_, which will be the distance for the robot to travel to the required object. Required distance to travel is calculated by taking the magnitude of the difference of minimum distance and current position of Kobuki and stored in variable _`required_distance`_. Command velocity _`cmd_vel`_ is passed to _/mobile base/commands/velocity_ to move the Kobuki in forward direction. When the robot reaches near the required object, the _`cmd_vel`_ is forced to 0. To avoid collision with the object, a safe distance is maintained between the robot and object. This threshold distance is set to 40cm.
 ```
-python scan _subscriber.py
+python scan_subscriber.py
 ```
 
 In next section, you can see the [Experimental Results](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Experimental%20Results.md).
