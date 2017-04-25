@@ -1,7 +1,7 @@
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Created by Abhi Ravikumar (abhi.ravikumar@protonmail.com)
-# Graduate Students @ The University of Texas at San Antonio, TX U.S.A
-# Research Students @ Autonomous Control & Engineering (ACE) Laboratory at UTSA
+# Graduate Student @ The University of Texas at San Antonio, TX U.S.A
+# Research Assistant @ Autonomous Control & Engineering (ACE) Laboratory at UTSA
 #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 #!/usr/bin/env python
