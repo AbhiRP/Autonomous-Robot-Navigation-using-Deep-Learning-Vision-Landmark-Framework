@@ -52,7 +52,7 @@ The user is prompted with the recognized object labels via a python script `Iden
 python IdentifyLocation.py
 ```
 
-The algorithm for orienting the robot towards the target is shown in figure below. First, the position of object is read from OPD file and copied to a variable _`required_angle`_. The current yaw angle of the robot is collected from `odom_listener` ROS node. The difference of required angle and current yaw angle is determined and stored in a new variable, _`error`_. The algorithm will minimize the error by rotating the robot towards the object until the error is approximately 0, in which case the robot stops and is oriented with the target.
+The algorithm for orienting the robot towards the target: First, the position of object is read from OPD file and copied to a variable _`required_angle`_. The current yaw angle of the robot is collected from `odom_listener` ROS node. The difference of required angle and current yaw angle is determined and stored in a new variable, _`error`_. The algorithm will minimize the error by rotating the robot towards the object until the error is approximately 0, in which case the robot stops and is oriented with the target.
 
 The distance from the robot to the target is calculated from measurements of the Asus Xtion depth camera. Due to lack of proper laser scanner, a ROS package `depthimage_to_lasercan` is used to convert the point cloud obtained from the depth image to a 2D laser scan in a _sensor_msgs/LaserScan_ type topic. The stock parameters for the `depthimage_to_lasercan` node are modified for the application (_scan_time_ is set to 0.5s, _range_min_ is reduced from 0.45m to 0.10m so the robot can detect the object even if it is very close to it).
 ```
