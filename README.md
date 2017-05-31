@@ -27,4 +27,4 @@ This project is documented as follows:
 4. [Project Implementation](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Project%20Implementation.md)
 5. [Experimental Results](https://github.com/AbhiRP/Autonomous-Robot-Navigation-using-Deep-Learning-Vision-Landmark-Framework/blob/master/Experimental%20Results.md)
 
-### Video of this project is available at https://youtu.be/VpU3qvuAgvQ
+### Video of this project is available at https://youtu.be/UOC4PvreTG4
